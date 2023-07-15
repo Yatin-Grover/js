@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 400px;
+        width: 450px;
+        border: 2px solid black;
+        margin: auto;
+        border-radius: 5px;
+    }
+    .btn{
+padding: 30px 53px;
+margin-bottom: 2px;
+background-color: var(--color);
+cursor: pointer;
+    }
+    
+    .btn-1{--color:red; border-color: white ;}
+    .btn-2{--color:green; border-color: white;}
+    .btn-3{--color:blue; border-color: white;}
+    .btn-4{--color:yellow; border-color: white;}
+    .btn-5{--color:brown; border-color: white;}
+    .btn-6{--color:orange; border-color: white;}
+    .btn-7{--color:purple; border-color: white;}
+    .btn-9{--color:aqua; border-color: white; }
+    .btn-10{--color:black; border-color: white; }
+    .btn-11{--color:white; border-color: white; }
+    .btn-12{--color:pink; border-color: white; }
+    .btn-8{--color:violet; border-color: white; }
+
+    .btn:hover{
+        box-shadow:  2px 2px grey;
+    }
+</style>
+<body>
+    <h1 style="text-align: center;">Click the Color Events</h1>
+    <h2 style="text-align: center;">AddEventListener</h2>
+    
+    <button class="btn btn-1"></button>
+    <button class="btn btn-2"></button>
+    <button class="btn btn-3"></button>
+    <button class="btn btn-4"></button>
+    <button class="btn btn-5"></button>
+    <button class="btn btn-6"></button>
+    <button class="btn btn-7"></button>
+    <button class="btn btn-8"></button>
+    <button class="btn btn-9"></button>
+    <button class="btn btn-10"></button>
+    <button class="btn btn-11"></button>
+    <button class="btn btn-12"></button>
+
+    <script>
+        alert("choose any color");
+//         let btns=
+//         document.getElementsByClassName("btn");
+//         for(let i=0;i<btns.length; i++){
+//             btns[i].addEventListener("click", function(){
+//                 let buttonStyle = getComputedStyle(this);
+// let buttonBgColor = buttonStyle["backgroundColor"];
+// document.body.style.backgroundColor = buttonBgColor;
+//             });
+//         }
+
+let btns=document.getElementsByClassName("btns");
+for(let i=0;i<btns.length;i++){
+    btns[i].addEventListener("click", function(){
+
+    });
+}
+
+    </script>
+</body>
+</html>

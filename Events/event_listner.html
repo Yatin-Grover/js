@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        border : 1px solid black;
+        width: 200px;
+        height: 100px;
+        overflow: scroll;
+    }
+</style>
+<body onload="window.alert('page successfully loaded')"> 
+   
+        <ol>
+        <h2><li>mouseoverevent</li></h2>
+        <p onmouseover="mouseoverevent()"> Keep cursor over me</p>  
+        
+        <!--  -->
+        <h2><li>mouseoutevent</li></h2>
+        <p onmouseout="mouseoutevent()"> Keep cursor over me</p>  
+        <!--  -->
+    <h2><li>clickevent</li></h2>
+    <button onclick="clickevent()">click Me</button>
+    <!--  -->
+
+    <!--  -->
+    <h2><li>onkeydown</li></h2>
+    <input type="text" id="input1" onkeydown="onkeydownevent()">
+
+     <!--  -->
+     <h2><li>onfocus</li></h2>
+     
+      <input type="text" onfocus="focusEvent(this)" onblur="blurEvent(this)">
+      <input type="text" onfocus="focusEvent(this)" onblur="blurEvent(this)">
+
+      <!--  -->
+      <h2><li>dblclickevent</li></h2>
+      <button ondblclick="dblclickevent()">Click Me</button>
+
+<!--  -->
+<h2><li>changeevent</li></h2>
+      <select onchange="changevent()">
+    <option>Apple</option>
+    <option>Blueberry</option>
+    <option>Orange</option>
+    <option>Banana</option>
+    </select>
+
+    <!--  -->
+    <h2><li>scrollevent</li></h2>
+    <div onscroll="scrollevent()">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit numquam accusantium amet, voluptas sint incidunt perferendis dolorum
+         itaque facilis dolores, sed consectetur culpa. Incidunt dolor repellendus maxime aliquid? Nisi ratione laborum quibusdam illum architecto officia id optio eum
+          veritatis amet error doloremque nulla reiciendis labore quas, alias placeat! Magni, impedit.</div>
+          <p>Scrolled <span id="scr">0</span>times</p>
+<!--  -->
+
+    </ol>
+
+
+
+
+   <script language="Javascript" type="text/Javascript">  
+     document.write("the page is loaded successfully");
+    function mouseoverevent()  
+    {  
+       document.write("yes i am there");
+    }  
+
+    function mouseoutevent()  
+    {  
+       document.write("yes i am there");
+    } 
+    
+    function clickevent(){
+        document.write("someone click the button");
+    }
+
+    function onkeydownevent(){
+        document.getElementById("input1");
+        alert("pressed a key");
+    }
+   
+    function focusEvent(element){
+        element.style.background="aqua";
+         element.style.color="pink";
+    }
+        function blurEvent(element){
+        element.style.background="pink";
+    }
+
+    function dblclickevent(){
+        document.write("thank you for click");
+    } 
+
+    function changeevent() {
+        alert("please change it through correct way")
+    }
+let x=0;
+    function scrollevent() {
+        document.getElementById("scr").innerHTML= x += 1;
+    }
+</script>  
+
+</body>
+</html>
